@@ -1,0 +1,168 @@
+---HTML SECTİON---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori</title>
+    <link rel="stylesheet" href="kategori.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="resimler/logo.jpg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#"><span>Kategori</span></a></li>
+                    <li><a href="#">Trendler</a></li>
+                    <li><a href="#">Hakkında</a></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="boxt">
+            <a href="#"><div class="box box1">
+                <h3>Aşk Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box2">
+                <h3>Bilimkurgu Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box3">
+                <h3>Aksiyon Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box4">
+                <h3>Korku Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box5">
+                <h3>Komedi Filmleri</h3>
+            </div></a>
+        </div>
+        <div class="boxt">
+            <a href="#"><div class="box box6">
+                <h3>Müzikal Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box7">
+                <h3>Gizem Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box8">
+                <h3>Animasyon Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box9">
+                <h3>Kahraman Filmleri</h3>
+            </div></a>
+            <a href="#"><div class="box box10">
+                <h3>Belgeseller</h3>
+            </div></a>
+        </div>
+
+    </div>
+</body>
+</html>
+
+---CSS SECTİON---
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('resimler/background.jpg');
+    background-position:center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.navbar{
+    height:15%;
+    display: flex;
+    align-items: center;
+}
+.container .navbar .logo{
+    width:100px;
+    opacity:60%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+nav{
+    flex: 1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin:60px;
+}
+nav ul li a{
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#fff;
+    font-size: 16px;
+    border-bottom: 0.1rem solid transparent;
+}
+nav ul li a:hover{
+    border-color: gold;
+    padding-bottom: 5px;
+}
+nav ul li span{
+    color: gold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boxt{
+    width:100%;
+    height:230px;
+    margin: 30px;
+    display: flex;
+}
+.box{
+    width:200px;
+    height:100%;
+    margin-left: 47px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.box h3{
+    color: #fff;
+    font-size: 20px;
+}
+.box1{
+    background-image: url(resimler/abouttime.jpg);
+}
+.box2{
+    background-image: url(resimler/intersteller.jpg);
+}
+.box3{
+    background-image: url(resimler/topgunmaverick.jpg);
+}
+.box4{
+    background-image: url(resimler/sessizbiryer.jpg);
+}
+.box5{
+    background-image: url(resimler/zohanabulaşma.jpg);
+}
+.box6{
+    background-image: url(resimler/lalaland.jpg);
+}
+.box7{
+    background-image: url(resimler/sherlock.jpg);
+}
+.box8{
+    background-image: url(resimler/ejderhanınasıleğitirsin.jpg);
+}
+.box9{
+    background-image: url(resimler/marvel.jpg);
+}
+.box10{
+    background-image: url(resimler/planetearth.jpg);
+}
+.box:hover{
+    transform: scale(1.3);
+}
